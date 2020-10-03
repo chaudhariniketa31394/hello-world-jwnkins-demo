@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/myapp
+cd /home/ubuntu/unziped
 
 curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
 apt install -y gcc-c++ make

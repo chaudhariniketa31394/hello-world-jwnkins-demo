@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/ubuntu/myapp
+cd /home/ubuntu/unziped
 echo 'Starting my app'
 
 
