@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /tmp/
+cd /home/ubuntu/myapp
+echo 'Starting my app'
+
 
 isExistApp = `pgrep httpd`
 if [[ -n  $isExistApp ]]; then

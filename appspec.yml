@@ -2,8 +2,12 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/
+    destination: /home/ubuntu/myapp
 hooks:
+  BeforeInstall:
+    - location: Scripts/UnzipResourceBundle.sh
+      timeout: 100
+      runas: root
   AfterInstall:
     - location: scripts/install_dependencies
       timeout: 100
@@ -12,3 +16,4 @@ hooks:
     - location: scripts/start_server
       timeout: 100
       runas: root
+  
