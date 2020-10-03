@@ -5,7 +5,7 @@ files:
     destination: /home/ubuntu/myapp
 hooks:
   BeforeInstall:
-    - location: scripts/unzipBundle.sh
+    - location: scripts/unzipBundle
       timeout: 400
       runas: root
   AfterInstall:
