@@ -7,6 +7,6 @@ ssh ubuntu@18.134.130.160 <<EOF
     nvm install v12.16.1
     npm install
     npm install -g nodemon pm2
-    pm2 restart ecosystem.config.js
+    node restart ecosystem.config.js
     exit
 EOF
